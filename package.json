@@ -1,0 +1,24 @@
+{
+  "name": "punctez-wallet-kit",
+  "version": "1.0.0",
+  "description": "Issue loyalty cards to Apple Wallet and Google Wallet from one config: PassKit signing, APNs updates, Google Wallet REST + save links. Extracted from Punctez.ro.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "test": "node --test \"tests/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "example:apple": "node examples/apple-test-pass.ts",
+    "example:google": "node examples/google-dry-run.ts"
+  },
+  "dependencies": {
+    "node-forge": "^1.3.1",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/node-forge": "^1.3.11",
+    "typescript": "^5.8.0"
+  }
+}
